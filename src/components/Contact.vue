@@ -27,13 +27,14 @@ export default {};
 
 <style scoped>
 #contact-form {
+    margin: 6rem auto;
     height: 100vh;
 }
 
 h1 {
     font-family: Dosis, Arial;
     font-size: 5rem;
-    text-transform: capitalize;
+    text-transform: uppercase;
     color: #da5131;
     margin-bottom: 1rem;
 }

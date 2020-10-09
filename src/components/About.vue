@@ -41,3 +41,11 @@ p {
 }
 
 </style>
+
+let stillAlive = true;
+while(stillAlive) {
+    wearMask();
+    socialDistance();
+    washHands();
+    getTested();
+}

@@ -11,8 +11,7 @@
                 Mobile Development, Game Development, and Graphic
                 Design.
             </p>
-            <a href="work.html" class="btn-light">View My Work</a>
-            <router-link tag="button" class="btn-light">View My Work</router-link>
+            <router-link to="/work" tag="button" class="btn-light">View My Work</router-link>
         </div>
     </div>
 </template>
