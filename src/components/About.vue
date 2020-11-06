@@ -2,18 +2,43 @@
     <div class="container">
         <div class="about-me">
             <h1>{{ title1 }}</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ducimus, repellendus quas optio, sed atque fugit fuga quia cum accusamus incidunt nesciunt sequi soluta expedita modi dicta iste blanditiis beatae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit ad, quaerat, accusantium quod nam sint pariatur error earum modi veniam quidem vitae dolor eius quo Quia illo libero facilis itaque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae eum ut nulla sed aut, praesentium saepe distinctio quaerat quidem eos tempore fugiat reprehenderit voluptatibus non suscipit nihil adipisci iste obcaecati?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat sed dolore optio impedit numquam accusamus, blanditiis ex magni eveniet doloribus laudantium ullam nesciunt nobis, reprehenderit inventore, quas sapiente itaque dolores!</p>
+            <p>
+                I'm Javano Collins, currently a Software Engineering major at
+                <a id="btvi" :href="'//' + btviUrl" target="_blank">BTVI</a> 🏫
+                . As a Software Engineer, I have fallen in love with web
+                technologies, and find a academic and career interest in Machine
+                Learning.
+            </p>
+            <br />
+            <p>
+                Additional things about me: <br> 
+                I am a boxer, <br>
+                I am an avid reader 
+                (subjects: finance, psychology, history, stem) <br>
+                I love marine
+                science and I self-proclaim to be an advocate for environmental
+                health. An additional passion of mine lies in applying
+                technology to marine science to save the ocean.
+            </p>
+            <br />
+
+            <p>
+                Some of the tools I use:<br />
+                Vue, React, Node, Sass, Python, MySQL, Photoshop, Illustrator, XD, Figma, Git, GitHub, VSCode, Postman
+            </p>
+            <img id="tools-banner" src="../assets/img/github-banner.jpg" alt="" srcset="">
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    data: function() {
+    data: function () {
         return {
             title1: "ABOUT ME",
+            btviUrl: "btvi.edu.bs",
         };
-    }
+    },
 };
 </script>
 
@@ -40,12 +65,13 @@ p {
     height: 80vh;
 }
 
-</style>
-
-let stillAlive = true;
-while(stillAlive) {
-    wearMask();
-    socialDistance();
-    washHands();
-    getTested();
+#btvi {
+    color: #da5131;
+    font-weight: bold;
 }
+
+#tools-banner {
+    width: 80%;
+    margin-top: 4rem;
+}
+</style>

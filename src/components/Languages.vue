@@ -21,13 +21,17 @@
                 <i class="fab fa-vuejs"></i>
                 <p class="skill-name">Vue</p>
             </div>
+            <div id="react">
+                <i class="fab fa-react"></i>
+                <p class="skill-name">React</p>
+            </div>
             <div id="node">
                 <i class="fab fa-node"></i>
                 <p class="skill-name">Node</p>
             </div>
-            <div id="mobile">
-                <i class="fas fa-mobile-alt"></i>
-                <p class="skill-name">Flutter</p>
+            <div id="mysql">
+                <i class="fas fa-database"></i>
+                <p class="skill-name">MySQL</p>
             </div>
         </div>
     </div>
@@ -37,5 +41,68 @@
 export default {};
 </script>
 
-<style>
+<style scoped lang='scss'>
+#skills {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: black;
+
+    p {
+        padding: 1rem;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+
+    i {
+        font-size: 5.5rem;
+        padding: 0 2rem;
+        color: #fff;
+        cursor: pointer;
+        transition: color 0.2s;
+    }
+    div {
+        color: #fff;
+        text-align: center;
+    }
+    .fa-js:hover {
+        color: #f8dc3d;
+        transition: color 0.2s;
+    }
+
+    .fa-html5:hover {
+        color: #da5131;
+        transition: color 0.2s;
+    }
+
+    .fa-css3-alt:hover {
+        color: #389fd8;
+        transition: color 0.2s;
+    }
+
+    .fa-python:hover {
+        color: #f8c34f;
+        transition: color 0.2s;
+    }
+
+    .fa-vuejs:hover {
+        color: #42b883;
+        transition: color 0.2s;
+    }
+
+    .fa-node:hover {
+        color: #7bc717;
+        transition: color 0.2s;
+    }
+
+    .fa-react:hover {
+        color: #5ed4f3;
+        transition: color 0.2s;
+    }
+    .fa-database:hover {
+        color: #ffb71c;
+        transition: color 0.2s;
+    }
+}
 </style>
+

@@ -6,10 +6,9 @@
                     Whatever the Challenge,
                     <br />We Always Deliver A Solution
                 </h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    <br />Mollitia asperiores nulla voluptate amet eligendi aliquam nam? Ipsa sed esse placeat.
-                </p>
+                <quote>
+                   “ Identify your problems but give your power and energy to solutions.” - Anonymous.
+                </quote>
             </div>
             <button>Find Out More</button>
         </div>
@@ -27,7 +26,7 @@ export default {};
 
 #solution-banner .banner {
     background: url(../img/banner.png) no-repeat center/cover;
-    height: 60vh;
+    height: 50vh;
 }
 #solution-banner .banner button {
     padding: 0.9rem;
@@ -48,7 +47,9 @@ export default {};
     color: #fff;
     display: block;
     padding-top: 8%;
+    margin: auto;
 }
+
 #solution-banner .container h3 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;

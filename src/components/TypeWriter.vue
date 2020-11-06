@@ -23,9 +23,8 @@ export default {
             typeValue: "",
             typeStatus: false,
             typeArray: [
-                "Machine Learning Engineer",
                 "Fullstack Developer",
-                "Mobile App Developer"
+                "Graphic Designer"
             ],
             typingSpeed: 40,
             erasingSpeed: 80,
@@ -80,11 +79,12 @@ export default {
 }
 
 #typewriter {
-    height: 90vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
 }
-#header-content {
-    padding-top: 16%;
-}
+
 #header-content h1 {
     font-size: 4rem;
     line-height: 1.2;

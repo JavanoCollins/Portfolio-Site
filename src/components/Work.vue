@@ -50,6 +50,7 @@ export default {
 
 .work-vue {
     height: 100vh;
+    margin: auto;
 }
 
 h1 {

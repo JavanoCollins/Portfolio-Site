@@ -2,12 +2,8 @@
     <section id="specialize">
         <div>
             <h1>I Specialize In</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Fullstack Web Development, Graphic Design</p>
             <div class="bottom-line"></div>
-            <p class="lead">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
-                reprehenderit eos dolorem beatae.
-            </p>
             <div class="specials container">
                 <!-- <div>
                     <i class="fa fa-robot"></i>
@@ -76,7 +72,6 @@ h1 {
 }
 
 .specials div {
-    margin: 2rem;
 
     .specialize-description {
         padding-top: 0.5rem;
