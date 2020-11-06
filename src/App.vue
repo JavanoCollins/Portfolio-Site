@@ -19,16 +19,20 @@ import Footer from "./components/Footer.vue";
 export default {
     components: {
         appNav: Nav,
-        appFooter: Footer
-    }
+        appFooter: Footer,
+    },
 };
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&display=swap");
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+        font-family: "Dosis", sans-serif;
+
 }
 
 html {
@@ -47,6 +51,7 @@ html {
     overflow: hidden;
     margin: 0 150px;
 }
+
 
 li,
 a {
@@ -95,6 +100,18 @@ a {
     }
     to {
         transform: translateY(20px);
+    }
+}
+
+button,
+a {
+    outline: none;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        /* max-width: 1500px; */
+        margin: 25px;
     }
 }
 </style>

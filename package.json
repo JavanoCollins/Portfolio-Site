@@ -1,19 +1,23 @@
 {
-  "name": "vue-cli-new",
+  "name": "javano-portfolio",
   "version": "0.1.0",
   "private": true,
+  "description": "A Portfolio of Projects",
   "scripts": {
     "serve": "vue-cli-service serve",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --inline --hot",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "start": "node server.js"
   },
   "dependencies": {
     "animate.css": "^4.1.0",
     "core-js": "^3.6.4",
+    "express": "^4.17.1",
     "sass": "^1.26.10",
     "sass-loader": "^8.0.2",
     "vue": "^2.6.11",
+    "vue-mq": "^1.0.1",
     "vue-router": "^3.3.1",
     "webpack": "^4.43.0",
     "websocket-extensions": ">=0.1.4"
