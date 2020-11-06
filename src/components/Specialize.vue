@@ -69,9 +69,6 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 2rem 0;
-}
-
-.specials div {
 
     .specialize-description {
         padding-top: 0.5rem;
@@ -91,5 +88,15 @@ i {
     color: #de2f00;
     font-size: 2rem;
     padding: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+    .specials {
+        grid-template-columns: repeat(1, 1fr);
+
+        .specialize-description {
+        width: 100%;
+    }
+    }
 }
 </style>

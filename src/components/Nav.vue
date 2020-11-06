@@ -30,7 +30,7 @@ export default {
 };
 </script>
 
-<style lang='scss'>
+<style lang='scss' scoped>
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&display=swap");
 
 * {
@@ -80,5 +80,11 @@ a {
 
 #main-nav a.current {
     border-color: #de2f00;
+}
+
+@media screen and (max-width: 500px) {
+    #main-nav {
+        justify-content: center;
+    }
 }
 </style>

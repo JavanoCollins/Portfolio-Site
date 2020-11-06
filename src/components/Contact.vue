@@ -1,19 +1,23 @@
 <template>
     <div class="container">
         <div id="contact-form">
-            <form method="post" action="mailto:javancollins@gmail.com">
+            <form method="post" action="mailto:javanocollins@gmail.com">
                 <h1>Shoot Me A Message</h1>
-                <label for="name">Name:</label>
+                    <label for="name">Name:</label>
                 <div>
                     <input type="name" placeholder="Name" size="40" />
                 </div>
-                <label for="email">Email:</label>
+                    <label for="email">Email:</label>
                 <div>
                     <input type="email" placeholder="Email" size="40" />
                 </div>
-                <label for="email">Message:</label>
+                    <label for="email">Message:</label>
                 <div>
-                    <textarea rows="13" cols="80" placeholder="Feel free to shoot me a message" />
+                    <textarea
+                        rows="13"
+                        cols="80"
+                        placeholder="Feel free to shoot me a message"
+                    />
                 </div>
                 <input type="submit" value="Send Email" class="btn-light" />
             </form>
@@ -25,7 +29,7 @@
 export default {};
 </script>
 
-<style scoped>
+<style scoped lang='scss'>
 #contact-form {
     margin: 6rem auto;
     height: 100vh;
@@ -72,5 +76,35 @@ button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
     background-color: #da5131;
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    #contact-form {
+        margin: 1rem auto;
+        height: auto;
+    }
+
+    input {
+        width: 100%;
+        padding: 1rem;
+    }
+    textarea {
+        width: 100%;
+    }
+
+    label {
+        padding-top: 1rem;
+        font-size: 1.2rem;
+    }
+
+    form {
+        div {
+            margin: 1.5rem 0;
+        }
+    }
 }
 </style>

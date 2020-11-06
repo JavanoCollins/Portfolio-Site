@@ -104,5 +104,11 @@ export default {};
         transition: color 0.2s;
     }
 }
+
+@media screen and (max-width: 500px) {
+    #skills {
+        display: none;
+    }
+}
 </style>
 

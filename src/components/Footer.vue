@@ -102,4 +102,15 @@ export default {};
         color: #fff;
     }
 }
+
+@media screen and (max-width: 500px) {
+    #main-footer .footer-container {
+        grid-template-columns: repeat(1, 1fr);
+        display: block;
+
+        div {
+            margin-bottom: 2rem;
+        }
+    }
+}
 </style>

@@ -11,22 +11,27 @@
             </p>
             <br />
             <p>
-                Additional things about me: <br> 
-                I am a boxer, <br>
-                I am an avid reader 
-                (subjects: finance, psychology, history, stem) <br>
-                I love marine
-                science and I self-proclaim to be an advocate for environmental
-                health. An additional passion of mine lies in applying
-                technology to marine science to save the ocean.
+                Additional things about me: <br />
+                I am a boxer, <br />
+                I am an avid reader (subjects: finance, psychology, history,
+                stem) <br />
+                I love marine science and I self-proclaim to be an advocate for
+                environmental health. An additional passion of mine lies in
+                applying technology to marine science to save the ocean.
             </p>
             <br />
 
             <p>
                 Some of the tools I use:<br />
-                Vue, React, Node, Sass, Python, MySQL, Photoshop, Illustrator, XD, Figma, Git, GitHub, VSCode, Postman
+                Vue, React, Node, Sass, Python, MySQL, Photoshop, Illustrator,
+                XD, Figma, Git, GitHub, VSCode, Postman
             </p>
-            <img id="tools-banner" src="../assets/img/github-banner.jpg" alt="" srcset="">
+            <img
+                id="tools-banner"
+                src="../assets/img/github-banner.jpg"
+                alt=""
+                srcset=""
+            />
         </div>
     </div>
 </template>
@@ -43,10 +48,8 @@ export default {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&display=swap");
 
 h1 {
-    font-family: Dosis, Arial;
     font-size: 5rem;
     text-transform: capitalize;
     color: #da5131;
@@ -62,7 +65,7 @@ p {
 
 .about-me {
     margin: 6rem auto;
-    height: 80vh;
+    /* height: 80vh; */
 }
 
 #btvi {
@@ -73,5 +76,29 @@ p {
 #tools-banner {
     width: 80%;
     margin-top: 4rem;
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        text-align: center;
+        margin: auto;
+        margin-bottom: 3rem;
+        font-size: 4rem;
+    }
+    .about-me {
+        /* text-align: center; */
+        margin: auto;
+    }
+
+    p {
+        width: 100%;
+        font-size: 1.1rem;
+        font-family: Lato;
+        line-height: 1.7;
+    }
+
+    #tools-banner {
+        width: 100%;
+    }
 }
 </style>

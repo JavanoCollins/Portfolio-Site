@@ -22,7 +22,7 @@
             image-url="item3.png" 
             project-title="Great Designs"></app-work-box>
         </div>
-        <h1>Other notable projects</h1>
+        <h2>Other notable projects</h2>
     </div>
 </template>
 
@@ -42,9 +42,9 @@ export default {
     font-family: "Dosis", sans-serif;
 }
 
-<style scoped>
+<style scoped lang='scss'>
 .work {
-    margin: 3rem auto;
+    /* margin: 3rem auto; */
     text-align: center;
 }
 
@@ -54,12 +54,19 @@ export default {
 }
 
 h1 {
-    font-family: Dosis, Arial;
-    font-size: 2rem;
+    font-size: 5rem;
     text-transform: capitalize;
+    text-align: center;
     color: #da5131;
     margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
     text-align: center;
+    color: #da5131;
+    margin-bottom: 1rem;
 }
 
 .work-grid {
@@ -67,5 +74,21 @@ h1 {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.5rem;
     margin: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+
+    .work-vue {
+        height: auto;
+    }
+
+    .work-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    h1 {
+    font-size: 4rem;
+
+}
 }
 </style>

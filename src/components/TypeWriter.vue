@@ -4,14 +4,16 @@
             <h1>
                 I am Javano Collins.
                 <span class="typed-text">{{ typeValue }}</span>
-                <span class="cursor" :class="{'typing': typeStatus}">&nbsp;</span>
+                <span class="cursor" :class="{ typing: typeStatus }"
+                    >&nbsp;</span
+                >
             </h1>
             <p class="lead">
-                I specialize in Machine Learning, Web Development,
-                Mobile Development, Game Development, and Graphic
-                Design.
+                I specialize in Web Development, and Graphic Design.
             </p>
-            <router-link to="/work" tag="button" class="btn-light">View My Work</router-link>
+            <router-link to="/work" tag="button" class="btn-light"
+                >View My Work</router-link
+            >
         </div>
     </div>
 </template>
@@ -22,15 +24,12 @@ export default {
         return {
             typeValue: "",
             typeStatus: false,
-            typeArray: [
-                "Fullstack Developer",
-                "Graphic Designer"
-            ],
+            typeArray: ["Fullstack Developer", "Graphic Designer"],
             typingSpeed: 40,
             erasingSpeed: 80,
             newTextDelay: 800,
             typeArrayIndex: 0,
-            charIndex: 0
+            charIndex: 0,
         };
     },
     methods: {
@@ -63,20 +62,15 @@ export default {
                     this.typeArrayIndex = 0;
                 setTimeout(this.typeText, this.typingSpeed + 1000);
             }
-        }
+        },
     },
     created() {
         setTimeout(this.typeText, this.newTextDelay + 200);
-    }
+    },
 };
 </script>
 
 <style lang='scss' scoped>
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&display=swap");
-
-* {
-    font-family: "Dosis", sans-serif;
-}
 
 #typewriter {
     height: 100vh;
@@ -121,6 +115,7 @@ input[class^="btn-"]:hover {
     justify-content: center;
     align-items: center;
 }
+
 h1 {
     font-size: 6rem;
     font-weight: 500;
@@ -150,6 +145,20 @@ span.cursor.typing {
     }
     99% {
         background-color: transparent;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .typed-text {
+        display: none;
+    }
+
+    #typewriter {
+        height: 50vh;
+    }
+
+    h1 {
+        font-size: 5rem;
     }
 }
 </style>
