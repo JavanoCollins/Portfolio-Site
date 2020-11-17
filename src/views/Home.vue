@@ -5,22 +5,19 @@
         </div>
         <app-specialize></app-specialize>
         <app-languages></app-languages>
-        <app-banner></app-banner>
     </div>
 </template>
 
 <script>
-import TypeWriter from "./TypeWriter.vue";
-import Specialize from "./Specialize.vue";
-import Languages from "./Languages.vue";
-import Banner from "./Banner.vue";
+import TypeWriter from "../components/TypeWriter.vue";
+import Specialize from "../components/Specialize.vue";
+import Languages from "../components/Languages.vue";
 
 export default {
     components: {
         appTypeWriter: TypeWriter,
         appSpecialize: Specialize,
         appLanguages: Languages,
-        appBanner: Banner,
     },
 };
 </script>

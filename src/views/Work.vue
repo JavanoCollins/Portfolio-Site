@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import WorkBox from "../components/WorkBox.vue";
+import WorkBox from "../components/WorkBox";
 export default {
     components: {
         appWorkBox: WorkBox
@@ -44,7 +44,7 @@ export default {
 
 <style scoped lang='scss'>
 .work {
-    /* margin: 3rem auto; */
+    margin: 6rem auto 0;
     text-align: center;
 }
 
@@ -56,7 +56,6 @@ export default {
 h1 {
     font-size: 5rem;
     text-transform: capitalize;
-    text-align: center;
     color: #da5131;
     margin-bottom: 1rem;
 }
