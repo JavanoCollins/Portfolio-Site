@@ -3,14 +3,13 @@
         <div>
             <h1>I Specialize In</h1>
             <p>Fullstack Web Development, Graphic Design</p>
-            <div class="bottom-line"></div>
             <div class="specials container">
                 <!-- <div>
                     <i class="fa fa-robot"></i>
                     <h3>Machine Learning</h3>Lorem ipsum, dolor sit amet consectetur adipisicing
                     elit. Esse tempore ipsa iusto? Amet, delectus nesciunt.
                 </div> -->
-                <div>
+                <div class="specialization">
                     <i class="fab fa-chrome"></i>
                     <h3>Fullstack Web Development</h3>
                     <p class="specialize-description">
@@ -31,13 +30,13 @@
                     <h3>Game Development</h3>Lorem ipsum, dolor sit amet consectetur adipisicing
                     elit. Esse tempore ipsa iusto? Amet, delectus nesciunt.
                 </div> -->
-                <div>
+                <div class="specialization">
                     <i class="fas fa-brush"></i>
                     <h3>Graphic Design</h3>
                     <p class="specialize-description">
                         I have an extensive background in graphic design. I
-                        specialize in logos, flyers, business
-                        cards, and mobile and desktop website mockups.
+                        specialize in logos, flyers, business cards, and mobile
+                        and desktop website mockups.
                     </p>
                 </div>
             </div>
@@ -77,6 +76,7 @@ h1 {
     }
 }
 
+
 .container {
     max-width: 1280px;
     padding: 4rem;
@@ -87,7 +87,7 @@ h1 {
 i {
     color: #de2f00;
     font-size: 2rem;
-    padding: 1rem;
+    margin: 0 0 1rem 0;
 }
 
 @media screen and (max-width: 500px) {
@@ -95,8 +95,17 @@ i {
         grid-template-columns: repeat(1, 1fr);
 
         .specialize-description {
-        width: 100%;
+            width: 100%;
+        }
     }
+
+    .container {
+        padding: 3rem;
     }
+
+    .specialization {
+    padding: 2rem 0;
+    line-height: 1.3rem;
+}
 }
 </style>

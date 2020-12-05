@@ -129,10 +129,14 @@ export default {
 
 @media screen and (max-width: 500px) {
     .footer-container {
+
         .site-links {
+            flex-direction: column;
+            text-align: center;
             margin: 2rem 0.1rem;
-            a {
-                padding: 1rem;
+            li {
+                padding: .5rem;
+                margin: .5rem;
             }
         }
     }

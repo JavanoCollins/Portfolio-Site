@@ -13,14 +13,16 @@
                 projectDescription="Vegan Restaurant"
             ></app-work-box>
 
-            <app-work-box 
-            image-url="item2.png" 
-            project-title="Great Designs"
-            project-url="http://udemy.com"></app-work-box>
+            <app-work-box
+                image-url="item2.png"
+                project-title="Great Designs"
+                project-url="http://udemy.com"
+            ></app-work-box>
 
-            <app-work-box 
-            image-url="item3.png" 
-            project-title="Great Designs"></app-work-box>
+            <app-work-box
+                image-url="item3.png"
+                project-title="Great Designs"
+            ></app-work-box>
         </div>
         <h2>Other notable projects</h2>
     </div>
@@ -30,11 +32,11 @@
 import WorkBox from "../components/WorkBox";
 export default {
     components: {
-        appWorkBox: WorkBox
+        appWorkBox: WorkBox,
     },
     methods: {
-        navigateHome() {}
-    }
+        navigateHome() {},
+    },
 };
 </script>
 
@@ -76,6 +78,9 @@ h2 {
 }
 
 @media screen and (max-width: 500px) {
+    .work {
+        margin: 0rem auto 0;
+    }
 
     .work-vue {
         height: auto;
@@ -86,8 +91,11 @@ h2 {
     }
 
     h1 {
-    font-size: 4rem;
+        font-size: 4rem;
+    }
 
-}
+    p {
+        font-size: .9rem;
+    }
 }
 </style>

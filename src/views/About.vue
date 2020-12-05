@@ -10,6 +10,7 @@
                 Learning.
             </p>
             <br />
+            <br />
             <p>
                 Additional things about me: <br />
                 I am a boxer, <br />
@@ -20,7 +21,7 @@
                 applying technology to marine science to save the ocean.
             </p>
             <br />
-
+            <br />
             <p>
                 Some of the tools I use:<br />
                 Vue, React, Node, Sass, Python, MySQL, Photoshop, Illustrator,
