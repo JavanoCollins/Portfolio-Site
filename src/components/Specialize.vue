@@ -1,69 +1,30 @@
 <template>
-    <section id="specialize">
-        <div>
-            <h1>I Specialize In</h1>
-            <p>Fullstack Web Development, Graphic Design</p>
-            <div class="specials container">
-                <!-- <div>
-                    <i class="fa fa-robot"></i>
-                    <h3>Machine Learning</h3>Lorem ipsum, dolor sit amet consectetur adipisicing
-                    elit. Esse tempore ipsa iusto? Amet, delectus nesciunt.
-                </div> -->
-                <div class="specialization">
-                    <i class="fab fa-chrome"></i>
-                    <h3>Fullstack Web Development</h3>
-                    <p class="specialize-description">
-                        I am a Fullstack Developer. The tools I work with are
-                        mainly Vue, React, Node, and MySQL. However, I am always
-                        open to learning new technologies. I ensure that
-                        applications are beautiful, performant, and mobile
-                        responsive.
-                    </p>
-                </div>
-                <!-- <div>
-                    <i class="fas fa-mobile"></i>
-                    <h3>Mobile App Development</h3>Lorem ipsum, dolor sit amet consectetur adipisicing
-                    elit. Esse tempore ipsa iusto? Amet, delectus nesciunt.
-                </div> -->
-                <!-- <div>
-                    <i class="fas fa-gamepad"></i>
-                    <h3>Game Development</h3>Lorem ipsum, dolor sit amet consectetur adipisicing
-                    elit. Esse tempore ipsa iusto? Amet, delectus nesciunt.
-                </div> -->
-                <div class="specialization">
-                    <i class="fas fa-brush"></i>
-                    <h3>Graphic Design</h3>
-                    <p class="specialize-description">
-                        I have an extensive background in graphic design. I
-                        specialize in logos, flyers, business cards, and mobile
-                        and desktop website mockups.
-                    </p>
-                </div>
-            </div>
+    <div class="specials container">
+        <div class="specialization" v-for="(item, index) in icons" :key="item">
+            <i :class="icons[index]"></i>
+            <h3>{{ titles[index] }}</h3>
+            <p class="specialize-description">{{ descriptions[index] }}</p>
         </div>
-    </section>
+    </div>
 </template>
 
 <script>
-export default {};
+export default {
+    props: ["icon", "title", "description"],
+    data() {
+        return {
+            icons: ["fab fa-chrome", "fas fa-brush"],
+            titles: ["Fullstack Web Development", "Graphic Design"],
+            descriptions: [
+                "I am a Fullstack Developer. The tools I work with are mainly Vue, React, Node, and MySQL. However, I am always open to learning new technologies. I ensure that applications are beautiful, performant, and mobile responsive.",
+                "I have an extensive background in graphic design. Ispecialize in logos, flyers, business cards, and mobile and desktop website mockups.",
+            ],
+        };
+    },
+};
 </script>
 
-<style scoped lang='scss'>
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&display=swap");
-
-#specialize {
-    background-color: #f3f3f3;
-    text-align: center;
-    font-family: "Dosis";
-    margin: 0 auto;
-}
-
-h1 {
-    font-size: 2rem;
-    padding: 3rem 0 1rem;
-    color: #da5131;
-}
-
+<style lang='scss' scoped>
 .specials {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -75,7 +36,6 @@ h1 {
         margin: auto;
     }
 }
-
 
 .container {
     max-width: 1280px;
@@ -104,8 +64,8 @@ i {
     }
 
     .specialization {
-    padding: 2rem 0;
-    line-height: 1.3rem;
-}
+        padding: 2rem 0;
+        line-height: 1.3rem;
+    }
 }
 </style>
