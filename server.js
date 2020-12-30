@@ -32,10 +32,10 @@ app.post("/contact", (req, res) => {
             <h3>Message</h3>
             <p>${req.body.message}</p>
     `;
-    main(output, subject, from).catch(console.error);
+    main(output, subject, from, res).catch(console.error);
 });
 
-async function main(output, subject, from) {
+async function main(output, subject, from, res) {
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
         host: "smtp-relay.sendinblue.com",
@@ -65,6 +65,8 @@ async function main(output, subject, from) {
     // Preview only available when sending through an Ethereal account
     console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
     // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+
+    res.sendFile(path.join(__dirname, './public', 'contact-success.html'))
 }
 
 const port = process.env.PORT || 5000;
