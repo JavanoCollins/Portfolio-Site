@@ -75,6 +75,7 @@ export default {
 
 .btn-light {
     background-color: #47e5bc;
+    color: #444;
 }
 
 .btn-light:hover {

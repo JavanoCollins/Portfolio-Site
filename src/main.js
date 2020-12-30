@@ -16,7 +16,8 @@ Vue.use(VueMq, {
   }
 })
 const router = new VueRouter({
-  routes
+  routes,
+  mode: 'history'
 })
 
 new Vue({

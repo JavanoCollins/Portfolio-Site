@@ -1,25 +1,67 @@
 <template>
     <div class="container">
         <div id="contact-form">
-            <form method="post" action="mailto:javanocollins@gmail.com">
-                <h1>Shoot Me A Message</h1>
-                    <label for="name">Name:</label>
+            <h1>Shoot Me A Message</h1>
+            <form method="POST" action="/contact">
+                <!-- Name -->
+                <label for="name">Name:</label>
                 <div>
-                    <input type="name" placeholder="Name" size="40" />
+                    <input
+                        type="name"
+                        placeholder="Name"
+                        size="40"
+                        name="name"
+                        class="input-field"
+                    />
                 </div>
-                    <label for="email">Email:</label>
+
+                <!-- Email -->
+                <label for="email">Email:</label>
                 <div>
-                    <input type="email" placeholder="Email" size="40" />
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        size="40"
+                        name="email"
+                        class="input-field"
+                    />
                 </div>
-                    <label for="email">Message:</label>
+
+                <!-- Phone -->
+                <label for="phone">Phone:</label>
+                <div>
+                    <input
+                        type="phone"
+                        placeholder="Phone"
+                        size="40"
+                        name="phone"
+                        class="input-field"
+                    />
+                </div>
+
+                <!-- Subject -->
+                <label for="name">Subject:</label>
+                <div>
+                    <input
+                        type="text"
+                        placeholder="Subject"
+                        size="40"
+                        name="subject"
+                        class="input-field"
+                    />
+                </div>
+
+                <!-- Message -->
+                <label for="email">Message:</label>
                 <div>
                     <textarea
                         rows="13"
                         cols="80"
                         placeholder="Feel free to shoot me a message"
+                        name="message"
                     />
                 </div>
-                <input type="submit" value="Send Email" class="btn-light" />
+                <button type="submit" class="btn-light">Send Email</button>
             </form>
         </div>
     </div>
@@ -33,6 +75,11 @@ export default {};
 #contact-form {
     margin: 6rem auto;
     height: 100vh;
+    margin-bottom: 10rem;
+}
+
+form {
+    width: 40%;
 }
 
 h1 {
@@ -45,20 +92,17 @@ h1 {
 
 input {
     padding: 0.6rem 1rem;
+    width: 100%;
 }
 
-label {
-    padding: 3rem 0;
+.input-field {
+    margin-bottom: 1.5rem;
 }
 
 textarea {
     padding: 0.5rem 1rem;
     font-size: 1rem;
-}
-
-.btn-light {
-    color: #333;
-    background-color: #f4f4f4;
+    width: 100%;
 }
 
 .btn-main,
@@ -70,6 +114,11 @@ textarea {
     border: none;
     cursor: pointer;
     margin: 1rem 0;
+}
+
+.btn-light {
+    color: #333;
+    background-color: #f4f4f4;
 }
 
 button[class^="btn-"]:hover,

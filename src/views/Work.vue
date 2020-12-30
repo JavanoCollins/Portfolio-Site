@@ -22,6 +22,7 @@
             <app-work-box
                 image-url="item3.png"
                 project-title="Great Designs"
+                project-url="http://facebook.com"
             ></app-work-box>
         </div>
         <h2>Other notable projects</h2>

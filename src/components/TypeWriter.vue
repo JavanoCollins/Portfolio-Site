@@ -24,7 +24,7 @@ export default {
         return {
             typeValue: "",
             typeStatus: false,
-            typeArray: ["Fullstack Developer", "Graphic Designer"],
+            typeArray: ["Software Engineer", "Graphic Designer"],
             typingSpeed: 40,
             erasingSpeed: 80,
             newTextDelay: 800,
