@@ -109,7 +109,11 @@ export default {
 
 .work-vue {
     /* height: 100vh; */
-    margin: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -119,13 +123,6 @@ h1 {
     margin-bottom: 1rem;
 }
 
-h2 {
-    font-size: 2rem;
-    text-transform: capitalize;
-    text-align: center;
-    color: #da5131;
-    margin-bottom: 1rem;
-}
 
 .work-grid {
     display: grid;
@@ -134,8 +131,15 @@ h2 {
     margin: 3rem 0;
 }
 
+#logos {
+    margin-top: 2rem;
+}
+
 .subtitle {
     font-size: 3rem;
+    text-transform: capitalize;
+    text-align: center;
+    color: #da5131;
 }
 
 @media screen and (max-width: 500px) {

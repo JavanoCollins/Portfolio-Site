@@ -31,7 +31,7 @@ export default {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.5rem;
-    margin: 1rem;
+    margin: auto;
 }
 
 .container {
@@ -55,38 +55,9 @@ img {
 }
 
 @media (max-width: 500px) {
-    #main-nav {
-        flex-direction: column;
-        align-items: center;
-    }
-    #main-nav li {
-        padding: 1rem;
-    }
-    #header-home {
-        height: 40rem;
-        text-align: center;
-        background-position: 20%;
-    }
-    #header-home .header-content > h1 > .txt-type {
-        display: none;
-    }
-    #header-inner {
-        height: 20rem;
-    }
-    #home-a {
-        height: 100%;
-    }
-    #home-a .specials,
-    .items,
-    #main-footer .footer-container {
-        grid-template-columns: 1fr;
-    }
-    #main-footer .container > *:last-child {
-        grid-column: 1;
-        background: #444;
-        display: grid;
-        padding: 0.5rem;
-        font-size: 1.1rem;
-    }
+    img {
+    width: 380px;
+}
+
 }
 </style>

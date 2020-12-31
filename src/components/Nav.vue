@@ -1,6 +1,11 @@
 <template>
     <div>
-        <nav id="main-nav">
+        <div id="menu-btn" @click="showMenuBtn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav id="main-nav" :style="{display: showMenu ? 'none' : 'flex'}" >
             <router-link to="/" tag="li">
                 <a>Home</a>
             </router-link>
@@ -26,11 +31,17 @@
 
 <script>
 export default {
+    components: {},
     data() {
         return {
-            nav: ["Home", "About", "Contact", "My Work"]
+            showMenu: false
         };
-    }
+    },
+    methods: {
+        showMenuBtn() {
+            this.showMenu = !this.showMenu
+        },
+    },
 };
 </script>
 
@@ -39,6 +50,17 @@ export default {
 
 * {
     font-family: "Dosis", sans-serif;
+}
+
+#menu-btn {
+    display: none;
+    div {
+        width: 35px;
+        height: 3px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
 }
 
 li {
@@ -88,7 +110,18 @@ a {
 
 @media screen and (max-width: 500px) {
     #main-nav {
+        flex-direction: column;
         justify-content: center;
+        display: none;
+    }
+
+    #main-nav li {
+        padding: 0.5rem;
+        position: sticky;
+    }
+
+    #menu-btn {
+        display: block;
     }
 }
 </style>

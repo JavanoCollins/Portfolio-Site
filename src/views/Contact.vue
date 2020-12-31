@@ -2,6 +2,16 @@
     <div class="container">
         <div id="contact-form">
             <h1>Shoot Me A Message</h1>
+            <p id="alt-contact">
+                You can also contact on
+                <a id="instagram" :href="'//' + instagramUrl" target="_blank"
+                    >Instagram</a
+                >
+                or
+                <a id="linkedin" :href="'//' + linkedinUrl" target="_blank"
+                    >LinkedIn</a
+                >
+            </p>
             <form method="POST" action="/contact">
                 <!-- Name -->
                 <label for="name">Name:</label>
@@ -68,14 +78,32 @@
 </template>
 
 <script>
-export default {};
+export default {
+    data: function () {
+        return {
+            instagramUrl: "instagram.com/javanocollins/",
+            linkedinUrl: "linkedin.com/in/javano-collins/",
+        };
+    },
+};
 </script>
 
 <style scoped lang='scss'>
 #contact-form {
     margin: 6rem auto;
-    height: 100vh;
+    /* height: 100vh; */
     margin-bottom: 10rem;
+}
+
+#alt-contact {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+#instagram,
+#linkedin {
+    color: #da5131;
+    font-weight: bold;
 }
 
 form {
@@ -91,8 +119,9 @@ h1 {
 }
 
 input {
-    padding: 0.6rem 1rem;
+    padding: 1rem;
     width: 100%;
+    border: #da5131 1.5px solid;
 }
 
 .input-field {
@@ -103,6 +132,7 @@ textarea {
     padding: 0.5rem 1rem;
     font-size: 1rem;
     width: 100%;
+    border: #da5131 1.5px solid;
 }
 
 .btn-main,
@@ -151,6 +181,7 @@ input[class^="btn-"]:hover {
     }
 
     form {
+        width: 100%;
         div {
             margin: 1.5rem 0;
         }
