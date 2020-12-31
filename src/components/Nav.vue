@@ -5,8 +5,12 @@
                 <a>Home</a>
             </router-link>
 
-            <router-link to="/work" tag="li">
-                <a>Work</a>
+            <router-link to="/dev-work" tag="li">
+                <a>Dev Work</a>
+            </router-link>
+
+            <router-link to="/design-work" tag="li">
+                <a>Design Work</a>
             </router-link>
 
             <router-link to="/about" tag="li">

@@ -1,7 +1,7 @@
 <template>
     <div class="container work-vue">
         <div class="work">
-            <h1>My Work</h1>
+            <h1>Design Work</h1>
             <p>Check out some of my projects</p>
         </div>
         <div class="work-grid">
@@ -21,11 +21,8 @@
 
             <app-work-box
                 image-url="item3.png"
-                project-title="Great Designs"
-                project-url="http://facebook.com"
             ></app-work-box>
         </div>
-        <h2>Other notable projects</h2>
     </div>
 </template>
 
