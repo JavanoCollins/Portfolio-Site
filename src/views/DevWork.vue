@@ -5,35 +5,35 @@
             <p>Check out some of my projects</p>
         </div>
         <div class="work-grid">
-            <app-work-box
+            <app-dev-work-box
                 image-url="item1.png"
                 project-title="King's Castle"
                 project-url="http://youtube.com"
                 project-type="Website"
                 projectDescription="Vegan Restaurant"
-            ></app-work-box>
+            ></app-dev-work-box>
 
-            <app-work-box
+            <app-dev-work-box
                 image-url="item2.png"
                 project-title="Great Designs"
                 project-url="http://udemy.com"
-            ></app-work-box>
+            ></app-dev-work-box>
 
-            <app-work-box
+            <app-dev-work-box
                 image-url="item3.png"
                 project-title="Great Designs"
                 project-url="http://facebook.com"
-            ></app-work-box>
+            ></app-dev-work-box>
         </div>
         <h2>Other notable projects</h2>
     </div>
 </template>
 
 <script>
-import WorkBox from "../components/WorkBox";
+import DevWorkBox from "../components/DevWorkBox";
 export default {
     components: {
-        appWorkBox: WorkBox,
+        appDevWorkBox: DevWorkBox,
     },
     methods: {
         navigateHome() {},

@@ -11,7 +11,7 @@
             <p class="lead">
                 I specialize in Web Development, and Graphic Design.
             </p>
-            <router-link to="/work" tag="button" class="btn-light"
+            <router-link to="/dev-work" tag="button" class="btn-light"
                 >View My Work</router-link
             >
         </div>
