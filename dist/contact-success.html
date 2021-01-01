@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>Hello World!</h1>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Document</title>
+    </head>
+    <body
+        style="
+          font-family: 'Dosis', 'sans-serif';
+          height: 100vh; 
+          display:flex;
+          flex-direction:column;
+          justify-content:center;
+          align-items:center;
+      "
+    >
+        <div style="text-align:center;">
+            <h1 style="color: #de2f00;">
+                Thank You
+            </h1>
+            <p>Message Sent!</p>
+            <p>
+                This page will redirect you to
+                <a style="color: #de2f00;" href="http://www.javanocollins.com"
+                    >home page</a
+                >
+            </p>
+        </div>
+    </body>
+    <script>
+        setTimeout(() => {
+            window.location.href = "http://www.javanocollins.com";
+        }, 3000);
+    </script>
 </html>

@@ -3,7 +3,7 @@
         <div id="contact-form">
             <h1>Shoot Me A Message</h1>
             <p id="alt-contact">
-                You can also contact on
+                You can also contact me on
                 <a id="instagram" :href="'//' + instagramUrl" target="_blank"
                     >Instagram</a
                 >

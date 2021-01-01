@@ -35,16 +35,13 @@ export default {
     },
     data() {
         return {
-            webTools: ["Adobe XD", "Illustrator", "Photoshop"],
-            designTools: [
-                "VS Code",
+            webTools:["VS Code",
                 "Git",
                 "Github",
                 "Postman",
                 "PyCharm",
-                "Terminal",
-            ],
-            webSubTools: [
+                "Terminal",],
+             webSubTools: [
                 "JavaScript",
                 "Vue",
                 "React",
@@ -52,6 +49,9 @@ export default {
                 "Node",
                 "Python",
                 "MySQL",
+            ],
+            designTools: [
+               "Adobe XD", "Illustrator", "Photoshop",
             ],
             designSubTools: ["UX", "UI", "Logos", "Flyers", "Web", "Mobile"],
         };
@@ -105,7 +105,7 @@ h1 {
 
     .container {
         max-width: 1280px;
-        padding: 1rem .5rem;
+        padding: 1rem 0.5rem;
         margin: auto;
         overflow: hidden;
     }

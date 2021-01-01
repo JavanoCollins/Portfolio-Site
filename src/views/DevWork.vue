@@ -4,6 +4,7 @@
             <h1>Dev Work</h1>
             <p>Check out some of my projects</p>
         </div>
+        <h2>**Under Maintenance**</h2>
         <div class="work-grid">
             <app-dev-work-box
                 image-url="item1.png"
@@ -25,7 +26,7 @@
                 project-url="http://facebook.com"
             ></app-dev-work-box>
         </div>
-        <h2>Other notable projects</h2>
+        <!-- <h2>Other notable projects</h2>  -->
     </div>
 </template>
 
@@ -68,7 +69,7 @@ h2 {
     text-transform: capitalize;
     text-align: center;
     color: #da5131;
-    margin-bottom: 1rem;
+    margin: 2rem;
 }
 
 .work-grid {

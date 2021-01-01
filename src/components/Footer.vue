@@ -22,7 +22,7 @@
                     <router-link to="/contact" tag="li"
                         ><a>Contact</a></router-link
                     >
-                    <router-link to="/work" tag="li"
+                    <router-link to="/dev-work" tag="li"
                         ><a>My Work</a></router-link
                     >
                     <li>

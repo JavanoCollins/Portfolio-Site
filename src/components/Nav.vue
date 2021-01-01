@@ -5,7 +5,7 @@
             <div></div>
             <div></div>
         </div>
-        <nav id="main-nav" :style="{display: showMenu ? 'none' : 'flex'}" >
+        <nav id="main-nav" :style="{ display: showMenu ? flex : none }">
             <router-link to="/" tag="li">
                 <a>Home</a>
             </router-link>
@@ -32,14 +32,21 @@
 <script>
 export default {
     components: {},
+    watch: {
+        $route(to, from) {
+            this.showMenu = false;
+        },
+    },
     data() {
         return {
-            showMenu: false
+            showMenu: true,
+            none: "none",
+            flex: "flex",
         };
     },
     methods: {
         showMenuBtn() {
-            this.showMenu = !this.showMenu
+            this.showMenu = !this.showMenu;
         },
     },
 };

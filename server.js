@@ -18,8 +18,8 @@ app.post("/contact", (req, res) => {
     // TODO
     // send email here
     console.log(req.body);
-    const subject = req.body.subject
-    const from = req.body.email
+    const subject = req.body.subject;
+    const from = req.body.email;
     const output = `
         <p>You have a new contact request</p>
         <h3>Contact Details</h3>
@@ -45,9 +45,6 @@ async function main(output, subject, from, res) {
             user: "javanocollins@gmail.com", // generated ethereal user
             pass: "UA8EFbGfVkQz7ISq", // generated ethereal password
         },
-        tls: {
-            rejectUnauthorized: false,
-        },
     });
 
     // send mail with defined transport object
@@ -66,7 +63,7 @@ async function main(output, subject, from, res) {
     console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
     // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
 
-    res.sendFile(path.join(__dirname, './public', 'contact-success.html'))
+    res.sendFile(path.join(__dirname, "./public", "contact-success.html"));
 }
 
 const port = process.env.PORT || 5000;

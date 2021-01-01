@@ -154,7 +154,7 @@ span.cursor.typing {
     }
 
     #typewriter {
-        height: 50vh;
+        height: 70vh;
     }
 
     h1 {
