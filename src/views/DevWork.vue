@@ -14,20 +14,19 @@
                 projectDescription="Vegan Restaurant"
                 project-tech="Vue, Sass, Node/Express, MySQL"
             ></app-dev-work-box>
-
-            <app-dev-work-box
-                image-url="item2.png"
-                project-title="Great Designs"
-                project-url="http://udemy.com"
-                project-tech="React, Sass, Node"
-            ></app-dev-work-box>
-
             <app-dev-work-box
                 image-url="item3.png"
                 project-title="Quote Generator"
                 project-url="https://blooming-chamber-25642.herokuapp.com/"
                 projectDescription="Random Quote Generator"
                 project-tech="Vue, Sass"
+            ></app-dev-work-box>
+
+            <app-dev-work-box
+                image-url="item2.png"
+                project-title="Great Designs"
+                project-url="http://udemy.com"
+                project-tech="React, Sass, Node"
             ></app-dev-work-box>
         </div>
         <!-- <h2>Other notable projects</h2>  -->
@@ -77,7 +76,7 @@ h2 {
 }
 
 #under-maintenance {
-    color: #47E5BC;
+    color: #47e5bc;
 }
 
 .work-grid {
@@ -105,7 +104,7 @@ h2 {
     }
 
     p {
-        font-size: .9rem;
+        font-size: 0.9rem;
     }
 }
 </style>

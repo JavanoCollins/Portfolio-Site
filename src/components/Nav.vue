@@ -6,6 +6,13 @@
             <div></div>
         </div>
         <nav id="main-nav" :style="{ display: showMenu ? flex : none }">
+            <router-link id="nav-logo-link" to="/" tag="a">
+                <img
+                    id="nav-logo"
+                    src="../assets/favicon/android-chrome-192x192.png"
+                    alt=""
+                />
+            </router-link>
             <router-link to="/" tag="li">
                 <a>Home</a>
             </router-link>
@@ -32,10 +39,8 @@
 <script>
 export default {
     components: {},
-    // watch: {
-    //     $route(to, from) {
-    //         this.showMenu = false;
-    //     },
+    // mounted: function () {
+    //     this.showMenu = false
     // },
     data() {
         return {
@@ -115,7 +120,26 @@ a {
     border-color: #de2f00;
 }
 
+#main-nav #nav-logo {
+    width: 50px;
+    margin-right: 32px;
+}
+
+#main-nav #nav-logo-link {
+    transition: all 0.1s;
+    transform: scale(1);
+    border-bottom: 0;
+    &:hover {
+        transition: all 0.05s;
+        transform: scale(0.9);
+        border-color: none;
+    }
+}
+
 @media screen and (max-width: 500px) {
+    #main-nav #nav-logo {
+        display: none;
+    }
     #main-nav {
         flex-direction: column;
         justify-content: center;
@@ -130,5 +154,11 @@ a {
     #menu-btn {
         display: block;
     }
+
+    #main-nav #nav-logo-link {
+    &:hover {
+        transform: scale(1);
+    }
+}
 }
 </style>
