@@ -4,7 +4,7 @@
             <h1>Dev Work</h1>
             <p>Check out some of my projects</p>
         </div>
-        <h2>**Under Maintenance**</h2>
+        <h2 id="under-maintenance">**Under Maintenance**</h2>
         <div class="work-grid">
             <app-dev-work-box
                 image-url="item1.png"
@@ -12,18 +12,22 @@
                 project-url="http://youtube.com"
                 project-type="Website"
                 projectDescription="Vegan Restaurant"
+                project-tech="Vue, Sass, Node/Express, MySQL"
             ></app-dev-work-box>
 
             <app-dev-work-box
                 image-url="item2.png"
                 project-title="Great Designs"
                 project-url="http://udemy.com"
+                project-tech="React, Sass, Node"
             ></app-dev-work-box>
 
             <app-dev-work-box
                 image-url="item3.png"
-                project-title="Great Designs"
-                project-url="http://facebook.com"
+                project-title="Quote Generator"
+                project-url="https://blooming-chamber-25642.herokuapp.com/"
+                projectDescription="Random Quote Generator"
+                project-tech="Vue, Sass"
             ></app-dev-work-box>
         </div>
         <!-- <h2>Other notable projects</h2>  -->
@@ -70,6 +74,10 @@ h2 {
     text-align: center;
     color: #da5131;
     margin: 2rem;
+}
+
+#under-maintenance {
+    color: #47E5BC;
 }
 
 .work-grid {

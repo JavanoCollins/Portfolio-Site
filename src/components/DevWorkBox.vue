@@ -12,11 +12,12 @@
                             <p class="item-text-category">{{ projectType }}</p>
                             <h2 class="item-text-title">{{ projectTitle }}</h2>
                             <p>{{projectDescription}}</p>
-                            <a class="btn-light" v-bind:href="projectUrl">Check It Out</a>
+                            <a class="btn-light" v-bind:href="projectUrl" target="_blank">Check It Out</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <h3 class="project-tech">{{projectTech}}</h3>
         </div>
     </section>
 </template>
@@ -28,7 +29,8 @@ export default {
         projectTitle: String,
         projectUrl: String,
         projectType: String,
-        projectDescription: String
+        projectDescription: String,
+        projectTech: String
     },
     data: () => {
         return {
@@ -58,6 +60,11 @@ export default {
     overflow: hidden;
 }
 
+.project-tech {
+    margin: 1.5rem;
+    color: #DA5131;
+}
+
 .text-center {
     text-align: center;
 }
@@ -74,12 +81,12 @@ export default {
 }
 
 .btn-light {
-    background-color: #47e5bc;
-    color: #444;
+    background-color: #DA5131;
+    color: #fff;
 }
 
 .btn-light:hover {
-    background-color: #37bb98;
+    background-color: #da5031dc;
 }
 
 .py-2 {
@@ -122,6 +129,7 @@ export default {
 .item-image {
     height: auto;
     display: block;
+    border: #DA5131 solid 1px;
     transform: translateZ(0);
     transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1);
 }
@@ -139,6 +147,7 @@ export default {
     height: 270px;
     line-height: 0;
 }
+
 .item-text {
     position: absolute;
     top: 0;
