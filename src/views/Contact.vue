@@ -3,7 +3,7 @@
         <div id="contact-form">
             <h1>Shoot Me A Message</h1>
             <p id="alt-contact">
-                You can also contact me on
+                The quickest way to reach me is via
                 <a id="instagram" :href="'//' + instagramUrl" target="_blank"
                     >Instagram</a
                 >
