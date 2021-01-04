@@ -9,7 +9,7 @@
             <app-dev-work-box
                 image-url="item1.png"
                 project-title="King's Castle"
-                project-url="http://youtube.com"
+                project-url="http://instagram.com"
                 project-type="Website"
                 projectDescription="Vegan Restaurant"
                 project-tech="Vue, Sass, Node/Express, MySQL"
