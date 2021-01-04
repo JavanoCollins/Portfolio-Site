@@ -3,10 +3,14 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const serveStatic = require("serve-static");
 const nodemailer = require("nodemailer");
+const history = require('connect-history-api-fallback')
+// const connect = require('connect');
 
 const { getMaxListeners } = require("process");
 
 const app = express();
+
+app.use(history())
 
 // Vue application
 app.use(serveStatic(__dirname + "/dist"));

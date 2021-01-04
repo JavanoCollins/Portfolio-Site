@@ -32,11 +32,11 @@
 <script>
 export default {
     components: {},
-    watch: {
-        $route(to, from) {
-            this.showMenu = false;
-        },
-    },
+    // watch: {
+    //     $route(to, from) {
+    //         this.showMenu = false;
+    //     },
+    // },
     data() {
         return {
             showMenu: true,
