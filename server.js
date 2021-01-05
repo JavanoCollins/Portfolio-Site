@@ -4,7 +4,7 @@ const path = require("path");
 const serveStatic = require("serve-static");
 const nodemailer = require("nodemailer");
 const history = require('connect-history-api-fallback')
-// const connect = require('connect');
+const herokuPing = require('heroku-self-ping').default(`http://${process.env.HEROKU_APP_NAME}`);
 
 const { getMaxListeners } = require("process");
 
