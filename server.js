@@ -4,9 +4,7 @@ const path = require("path");
 const serveStatic = require("serve-static");
 const nodemailer = require("nodemailer");
 const history = require("connect-history-api-fallback");
-const herokuPing = require("heroku-self-ping").default(
-    `http://${process.env.APP_URL}`
-);
+require("heroku-self-ping").default(`http://${process.env.APP_URL}`);
 
 const { getMaxListeners } = require("process");
 
@@ -65,11 +63,8 @@ async function main(output, subject, from, res) {
     });
 
     console.log("Message sent: %s", info.messageId);
-    // Message sent:  <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
 
-    // Preview only available when sending through an Ethereal account
     console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-    // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
 
     res.sendFile(path.join(__dirname, "./public", "contact-success.html"));
 }
@@ -78,5 +73,3 @@ const port = process.env.PORT || 5000;
 app.listen(port);
 
 console.log("server started " + port);
-
-// console.log(`http://${process.env.APP_URL}`);
