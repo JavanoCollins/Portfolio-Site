@@ -3,14 +3,18 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const serveStatic = require("serve-static");
 const nodemailer = require("nodemailer");
-const history = require('connect-history-api-fallback')
-const herokuPing = require('heroku-self-ping').default(`http://${process.env.HEROKU_APP_NAME}`);
+const history = require("connect-history-api-fallback");
+const herokuPing = require("heroku-self-ping").default(
+    `http://${process.env.APP_URL}`
+);
 
 const { getMaxListeners } = require("process");
 
 const app = express();
 
-app.use(history())
+require("dotenv").config();
+
+app.use(history());
 
 // Vue application
 app.use(serveStatic(__dirname + "/dist"));
@@ -61,7 +65,7 @@ async function main(output, subject, from, res) {
     });
 
     console.log("Message sent: %s", info.messageId);
-    // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+    // Message sent:  <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
 
     // Preview only available when sending through an Ethereal account
     console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
@@ -74,3 +78,5 @@ const port = process.env.PORT || 5000;
 app.listen(port);
 
 console.log("server started " + port);
+
+// console.log(`http://${process.env.APP_URL}`);
