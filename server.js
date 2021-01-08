@@ -10,6 +10,7 @@ const { getMaxListeners } = require("process");
 const app = express();
 
 require("dotenv").config();
+
 require("heroku-self-ping").default(`http://${process.env.HEROKU.APP.NAME}.herokuapp.com`);
 
 app.use(history());
