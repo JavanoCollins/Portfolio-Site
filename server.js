@@ -11,7 +11,7 @@ const app = express();
 
 require("dotenv").config();
 
-require("heroku-self-ping").default(`http://${process.env.HEROKU.APP.NAME}.herokuapp.com`);
+require("heroku-self-ping").default(`http://${process.env.HEROKU_APP_NAME}.herokuapp.com`);
 
 app.use(history());
 
