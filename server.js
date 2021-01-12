@@ -4,13 +4,11 @@ const path = require("path");
 const serveStatic = require("serve-static");
 const nodemailer = require("nodemailer");
 const history = require("connect-history-api-fallback");
-import hsp from 'heroku-self-ping'
 const app = express();
 
 require("dotenv").config();
 
-hsp("http://javanocollins.com")
-// require("heroku-self-ping").default(`http://${process.env.HEROKU_APP_NAME}.herokuapp.com`);
+require("heroku-self-ping").default("https://javano-portfolio.herokuapp.com/");
 
 app.use(history());
 
