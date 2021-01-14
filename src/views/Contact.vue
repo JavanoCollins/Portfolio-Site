@@ -154,7 +154,7 @@ textarea {
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
-    background-color: #da5131;
+    background-color: #47E5BC;
 }
 
 @media screen and (max-width: 500px) {

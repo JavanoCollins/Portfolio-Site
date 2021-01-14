@@ -99,6 +99,7 @@ export default {
     overflow: hidden;
     cursor: pointer;
 }
+
 .item::after {
     content: "";
     position: absolute;
@@ -112,20 +113,25 @@ export default {
     transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
     transition: transform 1.5s cubic-bezier(0.2, 1, 0.3, 1);
 }
+
 .item:hover::after {
     transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
 }
+
 .item-image {
     transition: transform 0.5s;
 }
+
 .item:hover .item-image {
     transform: scale(1.1);
     transition: transform 0.5s;
 }
+
 .item:hover .item-text {
     opacity: 1;
     transform: translateY(0);
 }
+
 .item-image {
     height: auto;
     display: block;
@@ -133,12 +139,14 @@ export default {
     transform: translateZ(0);
     transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1);
 }
+
 .item-image:before {
     content: "";
     display: block;
     padding-top: 75%;
     overflow: hidden;
 }
+
 .item-image img {
     position: absolute;
     top: 0;
@@ -163,17 +171,20 @@ export default {
         transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
     transition-delay: 200ms;
 }
+
 .item-text-wrap {
     position: absolute;
     width: 100%;
     top: 50%;
     transform: translateY(-50%);
 }
+
 .item-text-title {
     font-size: 2rem;
     padding: 0 1rem;
     margin: 5px 0;
 }
+
 .item-text-category {
     text-transform: uppercase;
     font-size: 1.2rem;

@@ -103,7 +103,7 @@ export default {
 
 <style scoped lang='scss'>
 .work {
-    margin: 6rem auto 2rem;
+    margin: 6rem auto 0;
     text-align: center;
 }
 

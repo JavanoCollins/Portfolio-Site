@@ -5,6 +5,7 @@
             <p>Check out some of my projects</p>
         </div>
         <h2 id="under-maintenance">**Under Maintenance**</h2>
+        <h2>Frontend Work</h2>
         <div class="work-grid">
             <app-dev-work-box
                 image-url="item1.png"
@@ -29,7 +30,32 @@
                 project-tech="React, Sass, Node"
             ></app-dev-work-box>
         </div>
-        <!-- <h2>Other notable projects</h2>  -->
+        <h2>Fullstack Work</h2>
+        <div class="work-grid">
+            <app-dev-work-box
+                image-url=""
+                project-title=""
+                project-url=""
+                project-type=""
+                projectDescription=""
+                project-tech=""
+            ></app-dev-work-box>
+            <app-dev-work-box
+                image-url=""
+                project-title=""
+                project-url=""
+                projectDescription=""
+                project-tech=""
+            ></app-dev-work-box>
+
+            <app-dev-work-box
+                image-url=""
+                project-title=""
+                project-url=""
+                project-tech=""
+            ></app-dev-work-box>
+        </div>
+        <h2>Other notable projects</h2> 
     </div>
 </template>
 
@@ -56,8 +82,8 @@ export default {
 }
 
 .work-vue {
-    height: 100vh;
-    margin: auto;
+    /* height: 100vh; */
+    margin: 0 auto;
 }
 
 h1 {
