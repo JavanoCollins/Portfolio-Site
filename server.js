@@ -5,12 +5,13 @@ const serveStatic = require("serve-static");
 const nodemailer = require("nodemailer");
 const history = require("connect-history-api-fallback");
 const app = express();
+const herokuPing = require("heroku-self-ping");
 
 require("dotenv").config();
 
-require("heroku-self-ping").default("https://javano-portfolio.herokuapp.com/");
 
 app.use(history());
+app.use(herokuPing.default("https://javano-portfolio.herokuapp.com/"))
 
 // Vue application
 app.use(serveStatic(__dirname + "/dist"));
