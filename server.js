@@ -9,9 +9,8 @@ const herokuPing = require("heroku-self-ping");
 
 require("dotenv").config();
 
-
 app.use(history());
-app.use(herokuPing.default("https://javano-portfolio.herokuapp.com/"));
+herokuPing.default(`${process.env.APP_URL}`);
 
 // Vue application
 app.use(serveStatic(__dirname + "/dist"));
