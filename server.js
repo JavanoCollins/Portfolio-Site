@@ -11,7 +11,7 @@ require("dotenv").config();
 
 
 app.use(history());
-app.use(herokuPing.default("https://javano-portfolio.herokuapp.com/"))
+app.use(herokuPing.default("https://javano-portfolio.herokuapp.com/"));
 
 // Vue application
 app.use(serveStatic(__dirname + "/dist"));
