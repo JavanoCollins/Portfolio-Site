@@ -12,6 +12,7 @@
     "nodemon": "nodemon server.js"
   },
   "dependencies": {
+    "@sendgrid/mail": "^7.4.2",
     "animate.css": "^4.1.0",
     "body-parser": "^1.19.0",
     "connect-history-api-fallback": "^1.6.0",
@@ -19,8 +20,9 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "heroku-self-ping": "^2.0.1",
-    "nodemailer": "^6.4.17",
+    "nodemailer": "^6.5.0",
     "nodemailer-mailgun-transport": "^2.0.2",
+    "nodemailer-sendgrid-transport": "^0.2.0",
     "sass": "^1.26.10",
     "sass-loader": "^8.0.2",
     "vue": "^2.6.11",

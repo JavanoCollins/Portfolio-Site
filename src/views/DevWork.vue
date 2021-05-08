@@ -7,30 +7,45 @@
         <h2 id="under-maintenance">**Under Maintenance**</h2>
         <h2>Frontend Work</h2>
         <div class="work-grid">
+            <!-- /Life on Mars -->
+            <app-dev-work-box
+                image-url="item4.png"
+                project-title="Life on Mars"
+                project-url="http://youtube.com"
+                project-type="Web App"
+                projectDescription="Explore Mars"
+                project-tech="HTML, SASS, JavaScript"
+            >
+            </app-dev-work-box>
+
+            <!-- Greenwood Furniture -->
+            <app-dev-work-box
+                image-url="item2.png"
+                project-title="Greenwood Furniture"
+                project-url="http://udemy.com"
+                project-tech="React, Sass, NASA API"
+            ></app-dev-work-box>
+
+            <!-- King's Castle Cuisine -->
             <app-dev-work-box
                 image-url="item1.png"
                 project-title="King's Castle"
                 project-url="http://instagram.com"
                 project-type="Website"
                 projectDescription="Vegan Restaurant"
-                project-tech="Vue, Sass, Node/Express, MySQL"
+                project-tech="Vue, Sass, Node"
             ></app-dev-work-box>
-            <app-dev-work-box
+
+            <!-- Quote Generator -->
+            <!-- <app-dev-work-box
                 image-url="item3.png"
                 project-title="Quote Generator"
                 project-url="https://blooming-chamber-25642.herokuapp.com/"
                 projectDescription="Random Quote Generator"
                 project-tech="Vue, Sass"
-            ></app-dev-work-box>
-
-            <app-dev-work-box
-                image-url="item2.png"
-                project-title="Great Designs"
-                project-url="http://udemy.com"
-                project-tech="React, Sass, Node"
-            ></app-dev-work-box>
+            ></app-dev-work-box> -->
         </div>
-        <h2>Fullstack Work</h2>
+        <!-- <h2>Fullstack Work</h2>
         <div class="work-grid">
             <app-dev-work-box
                 image-url=""
@@ -54,8 +69,8 @@
                 project-url=""
                 project-tech=""
             ></app-dev-work-box>
-        </div>
-        <h2>Other notable projects</h2> 
+        </div> -->
+        <!-- <h2>Other notable projects</h2>  -->
     </div>
 </template>
 
@@ -83,7 +98,7 @@ export default {
 
 .work-vue {
     /* height: 100vh; */
-    margin: 0 auto;
+    margin: 0 auto 6rem;
 }
 
 h1 {
@@ -109,6 +124,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.5rem;
+    justify-content: center;
     margin: 1rem;
 }
 

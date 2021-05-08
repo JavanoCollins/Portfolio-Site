@@ -3,6 +3,8 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const serveStatic = require("serve-static");
 const nodemailer = require("nodemailer");
+const sendgridTransport = require("nodemailer-sendgrid-transport");
+const sgMail = require('@sendgrid/mail')
 const history = require("connect-history-api-fallback");
 const app = express();
 const herokuPing = require("heroku-self-ping");
@@ -39,22 +41,22 @@ app.post("/contact", (req, res) => {
     main(output, subject, from, res).catch(console.error);
 });
 
+sgMail.setApiKey(
+    "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"
+);
+
 async function main(output, subject, from, res) {
     // create reusable transporter object using the default SMTP transport
-    let transporter = nodemailer.createTransport({
-        host: "smtp-relay.sendinblue.com",
-        port: 587,
-        secure: false, // true for 465, false for other ports
+    let transporter = nodemailer.createTransport(sendgridTransport({
         auth: {
-            user: "javanocollins@gmail.com", // generated ethereal user
-            pass: "UA8EFbGfVkQz7ISq", // generated ethereal password
-        },
-    });
+            api_key: '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'
+        }
+    }));
 
     // send mail with defined transport object
     let info = await transporter.sendMail({
-        from: `${from} <jdcollins242@gmail.com>`, // sender address
-        to: "javanocollins@gmail.com", // list of receivers
+        from: `javanocollins@gmail.com`, // sender address
+        to: "jdcollins242@gmail.com", // list of receivers
         subject: subject, // Subject line
         text: "Hello world?", // plain text body
         html: output, // html body

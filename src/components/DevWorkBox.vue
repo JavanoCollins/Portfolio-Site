@@ -105,7 +105,7 @@ export default {
     position: absolute;
     display: block;
     background: inherit;
-    opacity: 0.8;
+    opacity: .8;
     top: 0;
     left: 0;
     width: 100%;
@@ -123,7 +123,7 @@ export default {
 }
 
 .item:hover .item-image {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: transform 0.5s;
 }
 
@@ -135,7 +135,7 @@ export default {
 .item-image {
     height: auto;
     display: block;
-    border: #DA5131 solid 1px;
+    border: #bebebe solid 1px;
     transform: translateZ(0);
     transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1);
 }
@@ -143,7 +143,7 @@ export default {
 .item-image:before {
     content: "";
     display: block;
-    padding-top: 75%;
+    padding-top: 74%;
     overflow: hidden;
 }
 
