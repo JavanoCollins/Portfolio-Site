@@ -11,7 +11,7 @@
             <app-dev-work-box
                 image-url="item4.png"
                 project-title="Life on Mars"
-                project-url="http://youtube.com"
+                project-url="https://javanocollins.github.io/life-on-mars/"
                 project-type="Web App"
                 projectDescription="Explore Mars"
                 project-tech="HTML, SASS, JavaScript"
