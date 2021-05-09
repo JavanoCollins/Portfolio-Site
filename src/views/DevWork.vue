@@ -22,7 +22,7 @@
             <app-dev-work-box
                 image-url="item2.png"
                 project-title="Greenwood Furniture"
-                project-url="http://udemy.com"
+                project-url="https://github.com/JavanoCollins"
                 project-tech="React, Sass, NASA API"
             ></app-dev-work-box>
 
@@ -30,7 +30,7 @@
             <app-dev-work-box
                 image-url="item1.png"
                 project-title="King's Castle"
-                project-url="http://instagram.com"
+                project-url="https://github.com/JavanoCollins"
                 project-type="Website"
                 projectDescription="Vegan Restaurant"
                 project-tech="Vue, Sass, Node"
