@@ -156,7 +156,7 @@ h1 {
     }
 
     h1 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     p {

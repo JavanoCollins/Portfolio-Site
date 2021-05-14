@@ -2,7 +2,10 @@
     <!-- Section A: Gallery -->
     <section id="work-a" class="text-center py-2">
         <div class="container">
-            <img :src="require(`../assets/design-work/${directory}/${imageUrl}`)" alt="">
+            <img
+                :src="require(`../assets/design-work/${directory}/${imageUrl}`)"
+                alt=""
+            />
         </div>
     </section>
 </template>
@@ -11,18 +14,16 @@
 export default {
     props: {
         imageUrl: String,
-        directory: String
+        directory: String,
     },
     data: () => {
-        return {
-        
-        };
+        return {};
     },
     methods: {
         goToUrl() {
             console.log("object");
-        }
-    }
+        },
+    },
 };
 </script>
 
@@ -56,8 +57,7 @@ img {
 
 @media (max-width: 500px) {
     img {
-    width: 380px;
-}
-
+        width: 100%;
+    }
 }
 </style>
