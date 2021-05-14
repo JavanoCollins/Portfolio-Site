@@ -12,9 +12,8 @@
                 image-url="item4.png"
                 project-title="Life on Mars"
                 project-url="https://javanocollins.github.io/life-on-mars/"
-                project-type="Web App"
-                projectDescription="Explore Mars"
-                project-tech="HTML, SASS, JavaScript"
+                project-description="Explore Mars"
+                project-tech="HTML, SASS, JavaScript, NASA API"
             >
             </app-dev-work-box>
 
@@ -23,7 +22,8 @@
                 image-url="item2.png"
                 project-title="Greenwood Furniture"
                 project-url="https://github.com/JavanoCollins"
-                project-tech="React, Sass, NASA API"
+                project-description="All Your Funiture Needs"
+                project-tech="React, Sass"
             ></app-dev-work-box>
 
             <!-- King's Castle Cuisine -->
@@ -31,9 +31,8 @@
                 image-url="item1.png"
                 project-title="King's Castle"
                 project-url="https://github.com/JavanoCollins"
-                project-type="Website"
-                projectDescription="Vegan Restaurant"
-                project-tech="Vue, Sass, Node"
+                project-description="Vegan Restaurant"
+                project-tech="Vue, Sass, Node, GSAP"
             ></app-dev-work-box>
 
             <!-- Quote Generator -->

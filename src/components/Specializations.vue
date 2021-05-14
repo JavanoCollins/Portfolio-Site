@@ -8,8 +8,8 @@
             <Specialize
                 class="one"
                 icon="fab fa-chrome"
-                title="Fullstack Developer"
-                description="I am a Fullstack Developer always open to learning new technologies. I ensure that applications are beautiful, performant, and mobile responsive."
+                title="Frontend Developer"
+                description="I am a Frontend Developer that's always open to learning new technologies. I ensure that applications are beautiful, performant, and mobile responsive."
                 subtitles="Languages I speak"
                 :subtools="webSubTools"
                 :tools="webTools"
@@ -35,24 +35,19 @@ export default {
     },
     data() {
         return {
-            webTools:["VS Code",
+            webTools: [
+                "Vue",
+                "React",
+                "Node",
+                "VS Code",
                 "Git",
                 "Github",
                 "Postman",
                 "PyCharm",
-                "Terminal",],
-             webSubTools: [
-                "JavaScript",
-                "Vue",
-                "React",
-                "SASS",
-                "Node",
-                "Python",
-                "MySQL",
+                "Terminal",
             ],
-            designTools: [
-               "Adobe XD", "Illustrator", "Photoshop",
-            ],
+            webSubTools: ["JavaScript", "SASS", "Python", "MySQL"],
+            designTools: ["Adobe XD", "Illustrator", "Photoshop", "InDesign"],
             designSubTools: ["UX", "UI", "Logos", "Flyers", "Web", "Mobile"],
         };
     },
