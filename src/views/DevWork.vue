@@ -17,6 +17,15 @@
             >
             </app-dev-work-box>
 
+            <!-- King's Castle Cuisine -->
+            <app-dev-work-box
+                image-url="item1.png"
+                project-title="King's Castle"
+                project-url="https://javanocollins.github.io/kings-castle/#/"
+                project-description="Vegan Restaurant"
+                project-tech="Vue, Sass, Node, GSAP"
+            ></app-dev-work-box>
+
             <!-- Greenwood Furniture -->
             <app-dev-work-box
                 image-url="item2.png"
@@ -24,15 +33,6 @@
                 project-url="https://github.com/JavanoCollins"
                 project-description="All Your Funiture Needs"
                 project-tech="React, Sass"
-            ></app-dev-work-box>
-
-            <!-- King's Castle Cuisine -->
-            <app-dev-work-box
-                image-url="item1.png"
-                project-title="King's Castle"
-                project-url="https://github.com/JavanoCollins"
-                project-description="Vegan Restaurant"
-                project-tech="Vue, Sass, Node, GSAP"
             ></app-dev-work-box>
 
             <!-- Quote Generator -->
