@@ -30,7 +30,7 @@
             <app-dev-work-box
                 image-url="item2.png"
                 project-title="Greenwood Furniture"
-                project-url="https://github.com/JavanoCollins"
+                project-url="https://stark-waters-28413.herokuapp.com/"
                 project-description="All Your Funiture Needs"
                 project-tech="React, Sass"
             ></app-dev-work-box>
